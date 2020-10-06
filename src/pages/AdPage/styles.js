@@ -97,6 +97,40 @@ export const PageArea = styled.div`
       margin-top: 10px;
     }
   }
+
+  @media (max-width: 600px) {
+    & {
+      flex-direction: column;
+    }
+
+    .leftSide {
+      margin-right: 0;
+
+      .box {
+        width: 320px;
+        flex-direction: column;
+        margin: auto;
+
+        .adInformation {
+          padding: 10px;
+        }
+      }
+    }
+    .rightSide {
+      width: auto;
+      margin-top: 20px;
+
+      .box {
+        width: 320px;
+        margin: auto;
+      }
+
+      .contactSellerLink {
+        width: 320px;
+        margin: 20px auto;
+      }
+    }
+  }
 `;
 
 export const OthersArea = styled.div`
@@ -113,6 +147,19 @@ export const OthersArea = styled.div`
       min-width: 25%;
     }
   }
+
+  @media (max-width: 600px) {
+    & {
+      margin: 10px;
+    }
+
+    .list {
+      flex-wrap: wrap;
+    }
+    .list .aditem {
+      width: 50%;
+    }
+  }
 `;
 
 export const BreadCrumb = styled.div`
@@ -124,5 +171,11 @@ export const BreadCrumb = styled.div`
     margin: 0 5px;
     text-decoration: underline;
     color: #000;
+  }
+
+  @media (max-width: 600px) {
+    & {
+      margin: 20px;
+    }
   }
 `;
